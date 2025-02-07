@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #cff3f1;
 }
 .container {
     background: white;
@@ -23,8 +23,12 @@ button {
     background-color: #007BFF;
     color: white;
     border: none;
-    cursor: pointer;
+    cursor:grab;
+    
 }
 button:hover {
     background-color: #0056b3;
+}
+label{
+    display:inline-block
 }
