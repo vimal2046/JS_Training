@@ -77,7 +77,30 @@ alert( +apples + +oranges ); // 5
 let counter = 0;
 alert( counter++ ); // 0
 alert(counter); //1
-*/
+
 let a = prompt("First number?", 1);
 let b = prompt("Second number?", 2);
 alert(+a + +b); // 12
+*/
+/*
+alert( null > 0 );  // (1) false
+alert( null == 0 ); // (2) false
+alert( null >= 0 ); // (3) true
+
+//comaperison convert null into number
+*/
+
+
+/*
+//loops
+for(let i=1;i<=5;i++){
+    let year = Number(prompt("enter the year as 2015....😁😁😒"));
+    if (year == 2015){
+        alert('you are correct');
+        break;
+    }else{
+        alert('you are wrong');
+        continue;
+    }
+}
+    */
