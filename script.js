@@ -104,3 +104,28 @@ for(let i=1;i<=5;i++){
     }
 }
     */
+
+/*
+//using ternary operator
+let test = prompt('what is ur name?');
+let res =  test == 'vimal' ? true : false
+alert(res)
+*/
+
+/*
+i = 0;
+while(i <= 4){
+
+
+let age = prompt('enter ur age ?');
+
+let res = (age ==18) ? 'you are eligible to vote' : (age <= 18) ?'u are not eligible to vote' : (age > 18) ? 'u are very old' : "no ans for u😒";
+i++;
+alert(res);
+}
+*/
+/*
+let a = null || undefined ;
+let res = (a ?? "nothing")
+alert(res)
+*/
