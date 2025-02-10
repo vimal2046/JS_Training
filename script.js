@@ -129,3 +129,162 @@ let a = null || undefined ;
 let res = (a ?? "nothing")
 alert(res)
 */
+/*
+//global scope variable
+let val = "vimal";
+alert(val)
+function myFunc(){
+    alert(val);
+    val = "vimalchandar"
+    
+}
+myFunc()
+alert(val)
+*/
+/*
+let two = "chandar"
+function myFunc(one,two){
+   alert(one);
+    alert(two);
+}
+let one = 'vimal';
+myFunc(one,two)
+*/
+/*
+function myFunc(first, second){
+    alert(`${first} from the ${second}`);
+    two = "chandar_second"
+}
+let one = "vimal_first";
+let two;
+myFunc(one,two)
+*/
+/*
+myFunc(val)
+function myFunc(val){
+    if(val == undefined){
+        return;
+    }else{
+        alert("not undefined");
+    }
+   console.log(val);//value is not defined
+}
+
+function calcAge(age){
+    return (age > 18) || confirm("did your parents allowed u ?") ;
+}
+let age = 12;
+calcAge(age)
+*/
+/*
+let one = Number(prompt("enter number one"));
+let two = Number(prompt("enter number two"));
+
+function calcMinimum(one,two){
+    let res = Math.pow(one,two);
+    return res;
+}
+console.log(calcMinimum(one,two))
+*/
+/*
+//function expression
+let sayHi = function(val){
+    console.log(val)
+}
+let val = 12;
+sayHi(val)
+let newFunc = sayHi;
+newFunc(val+1);
+*/
+/*
+//callback functions
+function sampleQues(ques,yes,no){
+
+    if(confirm(ques)) yes()
+        else{
+            no()
+        }
+}
+function yes(){
+    alert('you are humam!! welcome to our ❤️')
+}
+function no(){
+    alert("SORRY !! you are not allowed to ener into this world🥺🥺")
+}
+sampleQues("are u humane ?",yes, no);
+*/
+/*
+//Arrow functions
+let func = (val) => {
+    //console.log(val)
+}
+func("sample")
+
+let age = Number(prompt("enter the number"));
+let check = (age >= 18) ? 
+    () =>console.log("truw") :
+    () =>console.log("false");
+check();
+*/
+/*
+let verify=(ques,yes,no)=>{
+        if(confirm(ques)) yes()
+            else
+        no()
+        
+      
+}
+let no = () => alert("not eligible")
+let yes = () => alert("eligible")
+verify("age",yes,no)
+*/
+/*
+let students={
+    std1:['vimal','hydra'],
+    std2:'vimal2',
+    std3:'vimal3',
+    
+}
+delete students.std2
+console.log(students)
+*/
+/*
+let animals={
+    "big animal":'elephant',
+    "small animal":'rat',
+}
+console.log(animals["big animal"])
+delete animals['big animal']
+console.log(animals["big animal"])
+*/
+/*
+let fruit = String(prompt('enter the fruit name'));
+//let quantity = Number(prompt('enter quantity'));
+let basket={
+    [fruit]: 4,
+    apple:10,
+}
+console.log(basket)
+*/
+/*
+//updating value using function
+function createUser(std1,reg1){
+    return{
+        std1:std1,
+        reg1:reg1,
+    }
+}
+let user=createUser("vimal","343sd");
+console.log(user)
+*/
+
+//doing same by using the short hand operator
+function users(names, rollNo){
+    return{
+        names,
+        rollNo,
+    };
+    }
+   
+let res = users('vimal','123')
+console.log(res)
