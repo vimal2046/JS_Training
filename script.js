@@ -277,7 +277,7 @@ function createUser(std1,reg1){
 let user=createUser("vimal","343sd");
 console.log(user)
 */
-
+/*
 //doing same by using the short hand operator
 function users(names, rollNo){
     return{
@@ -288,3 +288,4 @@ function users(names, rollNo){
    
 let res = users('vimal','123')
 console.log(res)
+*/
