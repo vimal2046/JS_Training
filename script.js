@@ -290,3 +290,91 @@ let res = users('vimal','123')
 console.log(res)
 fkwfk
 */
+/*
+//using Symbol.iterator
+let range = {
+    from:3,
+    to:9
+}
+
+range[Symbol.iterator] = function(){
+
+    return{
+        current: this.from,
+        last: this.to,
+
+        next(){
+
+            if(this.current <= this.last){
+                return{
+                    done: false, value: this.current++};
+
+                
+            }else{
+                return{done:true}
+            }
+        }
+    }
+}
+
+for (let num of range){
+    alert(num);
+}
+    */
+
+/*
+let sys = "vimalchandar";
+let arr = []
+let iterator = sys[Symbol.iterator]();
+
+while (true){
+    let res = iterator.next();
+    if(res.done) break;
+    arr.push(res.value)
+}
+alert(arr);
+*/
+/*
+
+let strs = 'vima233nfd'
+
+let chars  = Array.from(strs)
+
+console.log(chars);
+*/
+
+/*
+//array de structuring
+let arr = ['vimal','chandar','hello',"all","i am hydra"]
+const [first,second,third] = arr;
+console.log(first, second, third)
+
+
+//object de structuring
+
+const obj ={
+    name:'vimal',
+    roll:"student",
+    agr:"21",
+    email:"vimal@gmail.com",
+}
+
+const {name,roll,agr,email:emai} = obj;
+console.log(name,roll,agr,emai)
+*/
+
+/*
+//using spread operator
+let arr1 = [1,2,3,4,5,6]
+let arr2 = [7,8,9,10,11,12]
+
+let arrr = [...arr1, ...arr2]
+console.log(arrr)
+
+*/
+
+class Students{
+    name = "vimalchandar";
+    roll = "student";
+    age = "23"
+}
