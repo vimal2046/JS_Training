@@ -1,3 +1,5 @@
+
+/*
 // console.log("vimal")
 
 //variables- let, var, const
@@ -371,10 +373,332 @@ let arr2 = [7,8,9,10,11,12]
 let arrr = [...arr1, ...arr2]
 console.log(arrr)
 
-*/
+
 
 class Students{
     name = "vimalchandar";
     roll = "student";
     age = "23"
 }
+
+*/
+
+/*
+//Arrow functions in depth
+let func = function(str1, str2){
+    let str3 = str1 + str2;
+    return str3
+}
+
+console.log(func(1,2))
+
+*/
+
+/*
+let sum =  b => b ** 2;
+
+console.log(sum(5))
+*/
+/*
+let verify = function(st1,st2){
+     st1 > st2 ? verify1() : verify2 
+        
+}
+function verify1(){
+    console.log("hello it is verified")
+}
+
+function verify2(){
+    console.log("you are not allowed")
+}
+verify(102,20)
+
+//multiline arrow function
+
+let arrow = (arg1,arg2)=> {
+    let sum = arg1 + arg2
+    return sum
+}
+console.log(arrow(10,20))
+
+*/
+/*
+let user
+
+console.log(user ?? "enter the user value")
+
+*/
+/*
+let str1 =54;
+let str2 = 42;
+
+let func = (str1,str2) => {
+
+
+while(str1>str2){
+    
+    str1 = str1 - 1;
+    return str1
+}
+
+
+}
+console.log(func(str1,str2))
+// while loop is used to execute a block of code repeatedly for a specified number of times. It
+
+*/
+/*
+
+let age = "18"
+switch(age){
+    case 18:
+        console.log("you are 18");
+        break;
+    case "18":
+        console.log("you are 18 in string");
+        break
+    default:
+        console.log("you are not 18");
+}
+        */
+       /*
+let num = 10;
+let num2 = 20;
+debugger;
+let func = (num,num2) => {
+    let sum = num + num2;
+    return sum;
+    }
+    console.log(func(num,num2));
+*/
+/*
+function pow(x, n){
+    let result = 1;
+    for (let i = 0;i<n;i++){
+        return result;
+    }
+let x = prompt("x?", "");
+let n = prompt("n?", "");
+if(n <= 0){
+    alert(`power ${n} is not supportes,
+        plese enter the greater value` )
+    }
+else{
+    alert(pow(x, n));
+}
+    }
+*/
+/*
+let user = {
+    "name": "vimal",
+    "roll": "trainee",
+    "age": 21,
+    "address": {
+        "street": "street1",    
+        "city": "city1",
+        "state": "state1",
+        }
+}
+
+console.log(user.address)
+*/
+/*
+let vals = new Object();
+
+vals.name = "viam"
+vals.roll = "trainee"
+
+console.log(vals.name)
+*/
+/*
+let usr = {
+    "isHuman" : true,
+    "isAnimal": false
+}
+console.log(usr.isAnimal)
+
+usr.isAnimal = true;
+console.log(usr.isAnimal)
+console.log(usr)
+delete usr.isHuman
+console.log(usr)
+*/
+/*
+let usr = {
+    "first name" : "vimal chandar"
+}
+
+console.log(usr["first name"])
+*/
+
+/*
+let user = {
+    "name": "vimal",
+    "roll": "trainee",
+    "age": 21,
+    "address": {
+        "street": "street1",
+        "city": "city1",
+        "state": "state1",
+        }
+}
+let key = prompt(('enter what property do you want from the user'));
+
+console.log(user[key])
+*/
+/*
+let fruit = prompt("what name u want give ?");
+
+let things = {
+    [fruit] : "banana",
+    "apple" : "apple",
+}
+console.log(things);
+*/
+
+/*
+let fruit = 'apple'
+let bag = {
+    [fruit + ' items'] : "banana",
+};
+console.log(bag);// apple items = banana
+*/
+
+/*
+function makeUser(name,age,roll){
+    return{
+        name,
+        age,
+        roll,
+        bii : "dwekf"
+    }
+}
+console.log(makeUser("vimal",12,"trainee"))
+*/
+
+/*
+//using reserved words inside the obj is possible
+let obj = {
+    let:"lee",
+    var : "vee",
+    const : "vimal",
+}
+console.log(obj) //gives as normal
+*/
+
+/*
+//we cant able to use __proto__ as a property name...
+//this one is execption
+let usr = {
+__proto__ : 5,
+}
+usr.__proto__ = 5;
+console.log(usr.__proto__) //undefined
+*/
+
+/*
+let usr = {
+    viaml:2,
+}
+console.log(usr.fs)
+console.log("viaml" in usr)
+console.log("viaml" in usr) //false
+*/
+/*
+let users = {
+    name : "vimal",
+    age : 12,
+    roll : "trainee",
+    21:323,
+    23 :32,
+    1:3233,
+    3:53,
+
+}
+for(let key in users){
+    console.log(`${key} and the value is ${users[key]}`)
+}
+*/
+/*
+let codes = {
+    "+1":"one",
+    "+23":"two",
+    "+3":"three",
+    "+4":"four",
+    "+5":"five",
+}
+
+for (let code in codes){
+    console.log(`+${code} is ${codes[code]}`)
+}
+    */
+
+/*
+let salaries = {
+    john : 100,
+    Ann : 160,
+    Pete : "good boy",
+}
+
+for (let salary in salaries){
+   if (typeof salaries[salary] === "number"){
+    salaries[salary] = salaries[salary] * 2;
+   } 
+}
+
+console.log(salaries)
+*/
+/*
+let usr = {
+    name :"vimal",
+    age : 12,
+    roll : "trainee",
+}
+
+let cloneObj = {};
+
+for (let key in usr){
+    cloneObj[key] = usr[key];
+}
+
+console.log(cloneObj);
+
+usr.name = "rahul";
+console.log(usr)
+console.log(cloneObj)
+
+let sam = {};
+
+Object.assign(sam,cloneObj)
+
+console.log(sam)
+*/
+
+/*
+
+let studentsList = {
+    name1 : "std1",
+    name2 : "std2",
+    name3 : "std3",
+    name4 : "std4",
+}
+
+let clone = Object.assign({},studentsList);
+console.log(clone);
+*/
+
+let usr  = {
+    name : "vimal",
+    roll : "student",
+    age : 12,
+    toDo: {
+        1 : 12,
+        2 : 13,
+        3 : 14,
+        4 : 15,
+    }
+}
+
+let clone = structuredClone(usr)
+
+console.log(clone)
