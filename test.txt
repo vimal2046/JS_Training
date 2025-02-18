@@ -1,0 +1,10 @@
+EOD - 18.02.2025 - Tuesday
+Today, I covered and completed this topics.
+  Garbage collection in JS and how it works with reference variables.
+  Object Methods "this"
+  Constructor, Operator "new"
+  Optional chaining '?'
+  Symbol Data type, accessing symbol properties
+  Object to Primitive conversion using "Symbol.toPrimitive" 
+  
+

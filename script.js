@@ -686,6 +686,7 @@ let studentsList = {
 let clone = Object.assign({},studentsList);
 console.log(clone);
 */
+/*
 
 let usr  = {
     name : "vimal",
@@ -702,3 +703,215 @@ let usr  = {
 let clone = structuredClone(usr)
 
 console.log(clone)
+*/
+/*
+let user = {
+    name: "vimal",
+    roll: "student",
+    age: 12,
+    sayHi() {
+        console.log(this.roll)
+    }
+};
+let admin = user
+user = null
+admin.sayHi()
+*/
+/*
+function sayHi() {
+    console.log(this);
+  }
+  
+  sayHi(); // ❌ In strict mode: undefined, in normal mode: window
+  */
+/*
+  let user = {name : "vimal"}
+  let admin = {name :"nveen"}
+
+  function sayHi(){
+    console.log(this.name)
+  }
+
+user.f =sayHi;
+admin.f = sayHi;
+
+user.f();
+admin.f();
+*/
+/*
+let user1 = 
+{
+    name : "vimal",
+    age : 12,
+    sayHi() {
+        console.log(this.name);
+    }
+}
+let user2 = {
+    name : "nveen",
+    age : 14,
+    sayHi(){
+        console.log(this.name);
+    }
+}
+user1.sayHi();
+user2.sayHi();
+
+*/
+/*
+let user = {
+    name: "John",
+    sayHi: ()  {
+      console.log(this.name + " says hi!");
+    }
+  };
+  
+  let clone = user.sayHi(); // Fix this!
+
+  */
+ /*
+  let calculator = {
+    read(){
+        this.a = +prompt("a?", 0);
+        this.b = +prompt("b?", 0);
+
+    },
+    sum(){
+        return this.a + this.b;
+        
+    },
+    mul(){
+        return this.a * this.b;
+        }
+  };
+  
+  calculator.read();
+  console.log( calculator.sum() );
+  console.log( calculator.mul() );
+  */
+/*
+  function User(name){
+    this.name = name;
+    this.isAdmin = false;
+    console.log(this.name)
+  }
+
+let user = new User("Jack");
+console.log(user.name); // Jack
+*/
+/*
+let User = function(firstName,courseCount){
+    this.firstName = firstName;
+    this.courseCount = courseCount;
+    this.getFullName = function(){
+        console.log(`course count is ${this.courseCount}`);
+    }
+}
+
+let vimal = new User("vimalchandar", 2)
+let sam = new User("nveeb",32);
+let archie = new User("test",4)
+
+console.log(archie.firstName)
+*/
+/*
+function Members(memName,memAge,memhabit){
+    this.memName = memName;
+    this.memAge = memAge;
+    this.memhabit = memhabit;
+    this.welcomeMsg = function(){
+        console.log(`welcome onboard ${memName} you are good to go !!`)
+    };   
+}
+
+let member1 = new Members("vimal",21,"nothing")
+let member2 = new Members("hydra",100,"bad");
+let member3 = new Members(mem = prompt("enter the user name") ,prompt("enter age"),prompt("enter habit"));
+member1.welcomeMsg();//welcome onboard vimal you are good to go !!
+member2.welcomeMsg();//welcome onboard hyda you are good to go !!
+member3.welcomeMsg();//welcome onboard chintu you are good to go !!
+*/
+/*
+
+function Calc (){
+    this.read = function(){
+        this.num1 = prompt("enter num 1")
+        this.num2 = prompt("enter num 2")
+    };
+    this.sum = function() {
+        return this.num1 + this.num2;
+    };
+    this.mul = function(){
+        return this.num1 * this.num2
+    }
+}
+let calc = new Calc();
+calc.read();
+console.log(calc.sum())
+*/
+/*
+ let user = {
+    name: "vimal",
+    address : {
+    }
+ }
+ console.log(user?.address?.street);
+ */
+
+ /*
+let user = {
+    greet : () => "hello"
+};
+console.log(user?.greet())//bye
+console.log(user?.bye())//undefined
+*/
+
+/*
+let users = [{name : "vimal",class :"10"},{name1 : "vvv",std2 : "21"}]
+console.log(users[0]?.name)
+*/
+
+//symbol type
+/*
+let id =  Symbol("one");
+
+let id2 = Symbol("two")
+console.log(id == id2);
+*/
+/*
+
+let id = Symbol("sample symbol")
+let ide = Symbol("doe employww id")
+
+let employee = {};
+employee.qq = "qwq"
+employee.ww = "qqw"
+employee[id] = "vimal";
+employee[ide] = "122"
+
+for(keys in employee){
+    console.log(keys) // qq,ww
+    // //id and ide will be not shown in for...in loop
+}
+console.log(Object.getOwnPropertySymbols(employee))
+
+*/
+
+/*
+//objects to primitive conversion
+let user = {
+    name: "John",
+    money: 1000,
+  
+    [Symbol.toPrimitive](hint) {
+      if (hint === "string") return `{name: "${this.name}"}`;
+      if (hint === "number") return this.money;
+      return this.money; // default (same as number)
+    }
+  };
+  
+  alert(user);        // "{name: 'John'}" (string conversion)
+  alert(+user);       // 1000 (number conversion)
+  alert(user + 500);  // 1500 (default conversion)
+  */
+
