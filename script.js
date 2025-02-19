@@ -1,3 +1,5 @@
+
+/*
 // console.log("vimal")
 
 //variables- let, var, const
@@ -278,7 +280,6 @@ let user=createUser("vimal","343sd");
 console.log(user)
 */
 
-/*
 //doing same by using the short hand operator
 function users(names, rollNo){
     return{
@@ -289,92 +290,3 @@ function users(names, rollNo){
    
 let res = users('vimal','123')
 console.log(res)
-*/
-/*
-let vals = {
-    namee:'vimal',
-    cls:"23",
-    roll:"js",
-    roll_vals:{
-        qq:"12",
-        ww:"13",
-        ee:'14'
-    }
-}
-console.log(vals.roll_vals.ee)
-*/
-/*
-let details = {
-    firstName:"vimal",
-    secondName:"chandar",
-    rollNo:"548",
-    fullName:function(){
-        
-        return  this.firstName + this.secondName;
-        //return `${this.firstName} the last name is ${this.secondName}`;
-    },
-    //short method
-    allDetails(){
-        return this.secondName + this.firstName
-    }
-
-}
-console.log(details.fullName())
-console.log(details.allDetails())
-
-*/
-
-/*
-//assign operator in js
-let func ={
-    names:"vimal",
-    cls:"123",
-    time:12,
-    year:1222
-}
-
-let month = {
-    mon:8,
-
-}
-let test = {
-    dd:"232",
-}
-//object merging
-Object.assign(func, month)
-
-
-
-//OBJECT CLONING
-const newObjs = Object.assign({},func)
-console.log(newObjs)
-//spread operator to copy obj
-
-const finalobj = {...func}
-
-console.log(finalobj)
-
-*/
-/*
-//make first letter capital
-let strs = 'john';
-let ress = strs[0].toUpperCase()+strs.slice(1)
-console.log(ress)
-*/
-
-/*
-let spam= 'xxxerqw'
-
-let smaller = spam.toLowerCase();
-
-function check (){
-    return smaller.includes('xxx')
-}
-console.log(check())
-*/
-
-let styles = ['Jazz','Blues']
-styles.push['Rock-n-Roll']
-styles.pop['Blues']
-styles.push['1231']
-console.log(styles);
